@@ -9,7 +9,7 @@ const ArtHeader = () => {
     const [isConnectWalletModalOpen, setIsConnectWalletModalOpen] = useState(false);
 
     return (
-        <main className="bg-gray-900 mb-99 h-header">
+        <main className="bg-gray-900 mb-99 h-header"> 
                     <div className='flex flex-col lg:flex-row items-center'>
                     <div className='w-full h-header-img bg-gray-900 bg-cover bg-top bg-no-repeat' style={{backgroundImage: 'url(/assets/bg-artist.jpg)'}}>
                     </div>
