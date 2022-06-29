@@ -90,7 +90,7 @@ const CreateEvent = () => {
                 const uniqueArtist = []
                 for (let i = 0; i < artistNames?.length; i++) {
                     uniqueArtist.push({
-                        "name": artistNames[i],
+                        "name": artistNames[i], 
                         "id": i
                     })
                 }
