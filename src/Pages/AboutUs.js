@@ -28,7 +28,7 @@ function AboutUs() {
 
 
       <section className="container relative mx-auto px-24 py-99">
-        <h3 className="font-semibold text-28 text-center mb-24">Our story</h3>
+        <h3 className="font-semibold text-28 text-center mb-24">Our story</h3> 
         <p className="mt-4 text-lg leading-relaxed text-gray-600">
           In 2017 the world witnessed the birth of CryptoKitties. For the first time, the world experienced a decentralized application built on blockchains but targetted towards a mainstream audience.
           <br />
