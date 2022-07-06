@@ -119,13 +119,13 @@ const Navbar = () => {
                                     NFT Project</span
                                 >
                             </li>
-                            <li className="flex items-center">
+                            <Link to="/about-us">  <li className="flex items-center">
                                 <span
                                     className="lg:text-white cursor-pointer hover:text-primary text-gray-800 px-3 py-4 lg:py-2 flex items-center text-md"
                                 >
                                     About</span
                                 >
-                            </li>
+                            </li> </Link>
                             <li className="flex items-center">
                                 <span onClick={() => setIsContactModalOpen(!isContactModalOpen)}
                                     className="lg:text-white cursor-pointer hover:text-primary text-gray-800 px-3 py-4 lg:py-2 flex items-center text-md"
