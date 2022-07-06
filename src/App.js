@@ -1,28 +1,27 @@
+import { useEffect } from "react";
+import "./App.css";
+import { Route, Switch, useHistory } from "react-router-dom";
+import Web3 from "web3";
+import { Web3ReactProvider } from '@web3-react/core'
+import ClientRoutes from "./routes/ClientRoutes";
+import UserRoutes from "./routes/UserRoutes";
 
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Home from "./Pages/Home";
-import Explore from "./Pages/Explore";
-import Artist from "./Pages/Artist";
-import AboutUs from "./Pages/AboutUs";
-import Art from "./Pages/Art";
+function getLibrary(provider) {
+  return new Web3(provider)
+}
 
 function App() {
+  const history = useHistory();
+  const url = history?.location?.pathname?.split('/')?.includes('admin');
   return (
-    <>
-
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="art" element={<Art />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="explore" element={<Explore />} />
-          <Route path="artist" element={<Artist />} />
-        </Route>
-      </Routes>
-
-
-    </>
+    <Switch>
+      <Web3ReactProvider getLibrary={getLibrary}>
+        {url ?
+          <Route path="/admin/:page?" component={ClientRoutes} /> :
+          <Route path="/:page?" component={UserRoutes} />
+        }
+      </Web3ReactProvider>
+    </Switch>
   );
 }
 

@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className="bg-black top-0 relative h-76 z-20 w-full flex flex-wrap items-center justify-between px-2 py-0 navbar-expand-lg"
+            className="bg-black top-0 relative h-71 py-12 z-20 w-full flex flex-wrap items-center justify-between px-2 navbar-expand-lg"
         >
 
             <div
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <AuthModal isOpen={isAuthModalOpen} setIsOpen={setIsAuthModalOpen} />
                         <BsCart className="cursor-pointer transition-all text-white hover:text-gray-300 text-24 ml-2" />
                     <button
-                        className="cursor-pointer text-white text-xl leading-none py-12 border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
+                        className="cursor-pointer text-white text-xl leading-none border border-solid border-transparent rounded bg-transparent outline-none focus:outline-none"
                         type="button"
                         onClick={() => setOpen(!open)}
                     >
@@ -43,7 +43,7 @@ const Navbar = () => {
                 </section>
                 </div>
                 <div
-                    className={`${open ? 'flex' : 'hidden'} absolute top-75 left-0 bg-gray-200 right-0 lg:relative lg:top-unset lg:flex flex-grow items-center justify-between py-16 px-18 lg:p12 lg:bg-transparent lg:shadow-none`}
+                    className={`${open ? 'flex' : 'hidden'} absolute top-75 left-0 bg-gray-200 right-0 lg:relative lg:top-unset lg:flex flex-grow items-center justify-between px-18 lg:p12 lg:bg-transparent lg:shadow-none`}
                 >
                     <section className="flex items-center gap-16">
                         <Link to="/"> <h4 className="cursor-pointer text-26 font-medium text-white mb-4 logo hidden lg:block">art gallery</h4>  </Link>

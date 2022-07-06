@@ -5,7 +5,6 @@ module.exports = {
   purge: {
     content: [
       "./src/**/*.{js,jsx,ts,tsx}",
-      "./node_modules/flowbite/**/*.js"
     ],
   },
   // mode: 'jit',
@@ -448,6 +447,7 @@ module.exports = {
         6: "0.375rem",
         8: "0.5rem",
         10: "0.625rem",
+        "420": "420px",
         12: "0.75rem",
         14: "0.875rem",
         16: "1rem",
@@ -708,9 +708,6 @@ module.exports = {
         "btn-company-profile": "0px 11px 21px rgba(121, 57, 203, 0.13)",
         "regular-card": "2px 1px 5px rgba(18, 34, 97, 0.1)",
       },
-      backgroundImage: {
-        "page-background": "url('/assets/images/BACKGROUND.png')",
-      },
       minHeight: {
         800: "800px",
       },
@@ -730,6 +727,5 @@ module.exports = {
       cursor: ["disabled"],
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-]}
+  plugins: []
+}
